@@ -79,7 +79,7 @@
   -webkit-box-shadow: inset  0  10px 10px -10px black, 
                       inset  0 -10px 10px -10px black;
   box-shadow:         inset  0  10px 100px -100px black, 
-                      inset  0 -600px 5000px -350px rgba(0, 0, 0, .75);
+                      inset  0 -600px 5000px -350px rgba(0, 0, 0, .5);
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -165,5 +165,10 @@
 }
 
 .box-shadow-inset {
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  -moz-box-shadow:    inset  0  10px 10px -10px black, 
+                      inset  0 -10px 10px -10px black;
+  -webkit-box-shadow: inset  0  10px 10px -10px black, 
+                      inset  0 -10px 10px -10px black;
+  box-shadow:         inset  0  10px 100px -100px black, 
+                      inset  0 -600px 5000px -350px rgba(0, 0, 0, .75);
 }
