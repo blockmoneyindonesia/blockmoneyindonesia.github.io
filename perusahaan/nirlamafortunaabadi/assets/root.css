@@ -129,21 +129,47 @@
   letter-spacing: -.05rem;
 }
 
+.banner-stay {
+    z-index:-3000;
+    position: fixed;
+    width: auto*2;
+    max-width: none;
+    height: 100%;   
+  }
+
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 40em) {
+@media (max-width: 600px) {
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 1.25rem;
-    font-size: 1.25rem;
+    font-size: 8px;
     line-height: 1.4;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .carousel-caption h1 {
+    font-size: 16px;
   }
 
   .featurette-heading {
     font-size: 50px;
+  }
+
+  .banner-stay {
+    z-index:-3000;
+    position: fixed;
+    width: auto*2;
+    max-width: none;
+    height: 100%;   
   }
 }
 
@@ -151,21 +177,20 @@
   .featurette-heading {
     margin-top: 7rem;
   }
+
+  .banner-stay {
+    z-index:-3000;
+    position: fixed;
+    width: auto*2;
+    max-width: none;
+    height: 60%;   
+  }
 }
 
 .img-fit {
     object-fit: cover;
     object-position: bottom;
     }
-
- .banner-stay {
-    z-index:-3000;
-    position: fixed;
-    width: auto*2;
-    max-width: none;
-    height: 100%;
-      
-}
 
 .fix-gap {
   margin-bottom: -5rem;
