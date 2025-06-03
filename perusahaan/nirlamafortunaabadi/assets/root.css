@@ -237,7 +237,7 @@
   float: right;
 }
 
-@media (max-width: 395px) {
+@media (max-width: 500px) {
   
   .responsive-text h2
   {
