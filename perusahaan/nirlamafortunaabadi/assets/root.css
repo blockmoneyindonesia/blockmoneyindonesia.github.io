@@ -91,11 +91,6 @@
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 38rem;
-}
-
 .carousel-logo {
   height: 22rem;
 }
@@ -129,14 +124,6 @@
   letter-spacing: -.05rem;
 }
 
-.banner-stay {
-    z-index:-3000;
-    position: fixed;
-    width: auto*2;
-    max-width: none;
-    height: 100%;   
-  }
-
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
@@ -163,34 +150,13 @@
   .featurette-heading {
     font-size: 50px;
   }
-
-  .banner-stay {
-    z-index:-3000;
-    position: fixed;
-    width: auto*2;
-    max-width: none;
-    height: 100%;   
-  }
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
-
-  .banner-stay {
-    z-index:-3000;
-    position: fixed;
-    width: auto*2;
-    max-width: none;
-    height: 60%;   
-  }
 }
-
-.img-fit {
-    object-fit: cover;
-    object-position: bottom;
-    }
 
 .fix-gap {
   margin-bottom: -5rem;
@@ -237,6 +203,15 @@
   float: right;
 }
 
+.img-fit {
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.drop-shadow-1 {
+  filter: drop-shadow(-10px 10px 25px rgba(0,0,0,.5));
+}
+
 @media (max-width: 500px) {
   
   .responsive-text h2
@@ -248,8 +223,45 @@
   {
     font-size: 16px;
   }
+
+  .banner-stay {
+    z-index:-3000;
+    position: fixed;
+    width: auto*2;
+    max-width: none;
+    height: 60%; 
+  }
 }
 
-.drop-shadow-1 {
-  filter: drop-shadow(-10px 10px 25px rgba(0,0,0,.5));
+@media (min-width: 501px) {
+  
+  .responsive-text h2
+  {
+    font-size: 25px;
+  }
+
+  .responsive-text p
+  {
+    font-size: 16px;
+  }
+
+  .banner-stay {
+    z-index:-3000;
+    position: fixed;
+    width: auto*2;
+    max-width: none;
+    height: 60%;   
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.rowcolumn:after {
+  content: "";
+  display: table;
+  clear: both;
 }
