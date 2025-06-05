@@ -265,3 +265,11 @@
   display: table;
   clear: both;
 }
+
+@media (max-width: 991px){
+        .responsive-mar {
+         max-width: 500px;
+         margin-left: auto;
+         margin-right: auto;
+        }
+      }
